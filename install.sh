@@ -2,7 +2,7 @@
 # VLESS-TS-Argo 一键安装入口
 # 功能: 自动检测环境并安装最新版
 
-REPO="https://github.com/yourname/vless-ts"
+REPO="https://github.com/zv201413/vless-ts"
 SCRIPT_URL="${REPO}/releases/latest/download/vless-ts.sh"
 
 GREEN='\033[0;32m'
