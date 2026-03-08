@@ -16,16 +16,16 @@
 
 ### 【1. 普通模式部署】 (默认直连出站)
 ```
-curl -Ls "https://raw.githubusercontent.com/zv201413/vless-ts/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
+curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
 ```
 
 ### 【2. WARP 模式部署】 (解锁流媒体/AI服务)
 ```
-export warp=y && curl -Ls "https://raw.githubusercontent.com/zv201413/vless-ts/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
+export warp=y && curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
 ```
 ### 【3. 一键彻底卸载】 (停止所有进程并清空文件)
 ```
-curl -Ls "https://raw.githubusercontent.com/zv201413/vless-ts/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash -s uninstall
+curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash -s uninstall
 ```
 
 ## 三、 手动配置参数 (客户端对照表)
