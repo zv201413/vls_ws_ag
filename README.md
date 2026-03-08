@@ -7,7 +7,7 @@
 - **协议架构**：`VLESS` (极致轻量) + `WebSocket` (WS)
 - **隐匿传输**：利用 `Argo 隧道` (TryCloudflare) 穿透内网，隐藏 VPS 真实 IP
 - **出站解锁**：支持 `WARP` IPv6 优先出站，完美解锁 **ChatGPT / Netflix** 等流媒体
-- **安全特性**：无需开放任何公网入站端口，具备智能环境容错逻辑
+- **全能特性**：vps或者各类容器改造后的没有修改tun或网卡权限的docker版vps均可使用
 
 ---
 
@@ -22,7 +22,7 @@ curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/
 
 ### 2. WARP 模式部署 (强制 IPv6 优先出站)
 > [!TIP]
-> 如果你需要解锁流媒体或使用 AI 服务（如 ChatGPT），请运行此模式。它将通过 WireGuard 隧道优先进行 IPv6 路由。
+> 此模式将通过 WireGuard 隧道优先进行 IPv6 路由。
 
 ```bash
 export warp=y && curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date](https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date) +%s)" | bash
