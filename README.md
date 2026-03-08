@@ -39,6 +39,15 @@ curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/r
 - 路径 (Path): /ws
 - 底层传输安全 (TLS): 开启 (ON)
 
+### 【1. 隧道后台运行】
+```
+nohup ./cloudflared tunnel --url http://localhost:8003 --protocol quic --no-autoupdate > argo.log 2>&1 &
+```
+### 【2. xray后台运行】
+```
+nohup /home/zv/vless-all/xray -c /home/zv/vless-all/config.json > /home/zv/vless-all/xray.log 2>&1 &
+```
+
 ## 四、 常见问题 (FAQ)
 -----------------------------------------------------------
 Q: 为什么生成的链接显示的是 IP 和 8003 端口？
