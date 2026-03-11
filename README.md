@@ -17,7 +17,7 @@
 
 ### 1. 普通模式部署 (默认直连出站)
 ```bash
-curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date](https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date) +%s)" | bash
+curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
 ```
 
 ### 2. WARP 模式部署 (强制 IPv6 优先出站)
@@ -25,13 +25,13 @@ curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/
 > 此模式将通过 WireGuard 隧道优先进行 IPv6 路由。
 
 ```bash
-export warp=y && curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date](https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date) +%s)" | bash
+export warp=y && curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash
 ```
 
 ### 3. 一键彻底卸载 (停止进程并清空文件)
 
 ```bash
-curl -Ls "[https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date](https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date) +%s)" | bash -s uninstall
+curl -Ls "https://raw.githubusercontent.com/zv201413/vls_ws_ag/refs/heads/main/run_vless.sh?v=$(date +%s)" | bash -s uninstall
 ```
 ---
 
